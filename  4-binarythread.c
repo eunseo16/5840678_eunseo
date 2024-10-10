@@ -22,7 +22,7 @@ void BinaryTreeInOrder(TreeNode* root) {
 }
 
 ThreadNode* find_successor(ThreadNode* p) {
-    ThreadNode* q = p->right; 
+    ThreadNode* q = p->right;
     if (q == NULL || p->is_thread) return q;
     while (q->left != NULL) q = q->left;
     return q;
